@@ -22,6 +22,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.btn-left {
+  display: flex;
+  justify-content: flex-start;
+}
 .btn-orange {
   background-color: var(--secondery-color);
   color: var(--text-white);
@@ -31,7 +35,6 @@ body {
   border: none;
   border-radius: 8px;
   display: inline-block;
-  margin: 0 auto;
 }
 
 /* Header style */
@@ -85,4 +88,43 @@ nav ul li a {
 .banner img {
   width: 100%;
   margin-top: 50px;
+}
+
+/* features style */
+.features {
+  display: flex;
+  gap: 73px;
+  padding: 80px 0;
+  align-items: center;
+}
+.box {
+  width: 100%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.gallery img {
+  width: 100%;
+}
+
+.bio .title {
+  width: 468px;
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.bio .title > .left {
+  color: var(--nav-text);
+}
+.bio .title > .right {
+  color: var(--secondery-color);
+}
+.bio .description {
+  width: 537px;
+  color: var(--nav-text);
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
