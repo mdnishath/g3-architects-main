@@ -183,6 +183,10 @@ nav ul li a {
 .item-container .item .description {
   color: var(--nav-text);
   line-height: 26px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .imag-container img {
   width: 100%;
